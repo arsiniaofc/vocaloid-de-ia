@@ -20,7 +20,7 @@ if not exist %BUILD_DIR% mkdir %BUILD_DIR%
 cd %BUILD_DIR%
 
 echo Generating Visual Studio project...
-cmake -G "Visual Studio 17 2022" -A x64 -DJUCE_DIR="%JUCE_PATH%" ..\vst_source
+cmake -DJUCE_DIR="%JUCE_PATH%" ..\vst_source
 
 if %errorlevel% neq 0 (
     echo [ERROR] CMake generation failed!
