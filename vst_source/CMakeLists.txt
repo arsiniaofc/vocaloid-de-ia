@@ -39,3 +39,6 @@ target_link_libraries(MathSynth
     juce::juce_recommended_lto_flags
     juce::juce_recommended_warning_flags
 )
+
+# Gera o arquivo JuceHeader.h necessário para compatibilidade com macros antigas e importação simplificada
+juce_generate_juce_header(MathSynth)
