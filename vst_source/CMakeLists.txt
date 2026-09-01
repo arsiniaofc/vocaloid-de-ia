@@ -28,6 +28,7 @@ target_compile_definitions(MathSynth
     PUBLIC
     JUCE_WEB_BROWSER=1
     JUCE_USE_CURL=0
+    JUCE_VST3_CAN_REPLACE_VST2=0
 )
 
 target_link_libraries(MathSynth
