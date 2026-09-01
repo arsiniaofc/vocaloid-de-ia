@@ -6,7 +6,7 @@ echo This script requires CMake, Visual Studio, and JUCE to be installed.
 echo Set the JUCE_PATH variable below to your JUCE directory.
 echo.
 
-set JUCE_PATH=C:\JUCE
+set JUCE_PATH=C:\Users\Moita\Documents\JUCE
 set BUILD_DIR=build_vst
 
 if not exist "%JUCE_PATH%\CMakeLists.txt" (
