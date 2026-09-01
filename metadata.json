@@ -1,0 +1,6 @@
+{
+  "name": "Remix VocalStudio DSP",
+  "description": "A high-fidelity vocal synthesizer using mathematical formant modeling. Generate singing, speech, and vocal textures based on pure DSP algorithms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
