@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.22)
 project(MathSynth VERSION 1.0.0)
 
-# Make sure JUCE_DIR is passed to CMake or found in environment
-find_package(JUCE CONFIG REQUIRED)
+# Make sure JUCE_DIR is passed to CMake (e.g. -DJUCE_DIR="C:/JUCE")
+if (NOT TARGET juce::juce_audio_utils)
+    add_subdirectory("${JUCE_DIR}" "${CMAKE_BINARY_DIR}/JUCE" EXCLUDE_FROM_ALL)
+endif()
 
 juce_add_plugin(MathSynth
     IS_SYNTH TRUE
